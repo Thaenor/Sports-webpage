@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="JDHoqueiT.xsl"?>
+
+<Jornal
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="JornalXsd.xsd"
+>
+    <Noticias>
+        <Noticia id="1" idModalidade="1" idLigaN="1">
+            <idClubes idClube="1"/>
+            <Lingua>
+                <PT>
+                    <Titulo>FC Porto vence SL Benfica por 2-1</Titulo>
+                    <Texto>
+                        O FC Porto venceu o Benfica, por 2-1, no Dragão e ultrapassou os encarnados na classificação, quando falta apenas uma jornada para o final do campeonato.
+                        Lima adiantou as águias aos 19 minutos, mas um golo de Maxi Pereira na própria baliza, após um cruzamento de Varela, sete minutos depois.
+                        Na segunda parte, os dragões chegaram à vitória aos 90+2 minutos, através de Kelvin. Vítor Pereira chorou de alegria com o golo, enquanto Jorge Jesus ficou de joelhos.
+                    </Texto>
+                </PT>
+                <ENG>
+                    <Titulo>FC Porto 2-1 Benfica</Titulo>
+                    <Texto>
+                        FC Porto won against Benfica, 2-1, in the Estádio do Dragão ascending the 1st place in the table with 1 fixture left to the end of the league.
+                        Lima broke the deadlock in the 19min, but seven minutes later Varela crosses and Maxi Pereira scores an own goal, tieing the game.
+                        In the second half, the Dragons scored the winning goal in their last gasp. Kelvin places a fantastic shot in the 92min that made his coach cry of joy, while Jorge Jesus fell
+                        in his knees, heartbroken.
+                    </Texto>
+                </ENG>
+            </Lingua>
+            <Data>
+                <Dia>15</Dia>
+                <Mes>05</Mes>
+                <Ano>2013</Ano>
+                <Hora>19:45</Hora>
+            </Data>
+            <Autor>Marco Ferreira</Autor>
+            <Resumo>x</Resumo>
+            <Foto>http://www.abola.pt/img/fotos/porto/2012-2013/kelvin.jpg</Foto>
+            <Relacionadas rel="2">2</Relacionadas>
+        </Noticia>
+        <Noticia id="2" idModalidade="3" idLigaN="1">
+           <idClubes idClube="1"/>
+            <Lingua>
+                <PT>
+                    <Titulo>FC Porto vence Oliveirense por 7-6</Titulo>
+                    <Texto>
+                        Já campeão, o FC Porto continua a ganhar no campeonato nacional.
+                        Esta sexta-feira venceu no terreno da Oliveirense, terceiro classificado, por 7-6, em partida antecipada da 29.ª e penúltima jornada.
+                        Os dragões chegaram ao intervalo a perder por 5-2 mas uma recuperação notável no segundo tempo, liderada por Reinaldo Ventura (fez um poker), permitiu a vitória.
+                    </Texto>
+                </PT>
+                <ENG>
+                    <Titulo>FC Porto 7-6 Oliveirense</Titulo>
+                    <Texto>
+                        FC Porto keeps winning for the National League, although they already won the title.
+                        This friday, Porto went to Oliverense's turf , 3rd in the table, and won 7-6 for the 29th fixture that had to be posponed.
+                        The Dragons were 5-2 down in the first half, manage to do an outstanding comeback in the second half. Reinaldo Ventura was the MVP scored 4 goals, grabing the win.
+                    </Texto>
+                </ENG>
+            </Lingua>
+            <Data>
+                <Dia>24</Dia>
+                <Mes>05</Mes>
+                <Ano>2013</Ano>
+                <Hora>23:57</Hora>
+            </Data>
+            <Autor>Redacao</Autor>
+            <Resumo>Pornto vence por 7-6 Oliverense em jogo para a liga de hóquei portuguesa.</Resumo>
+            <Foto>http://www.abola.pt/img/fotos/hoquei/2011/reinaldoventura1.jpg</Foto>
+        </Noticia>
+        
+        <Noticia id="3" idModalidade="1" idLigaN="1">
+           <idClubes idClube="2"/>
+            <Lingua>
+                <PT>
+                    <Titulo>Benfica perde final da Liga Europa</Titulo>
+                    <Texto>
+                        O Benfica perdeu a final da Liga Europa para o Chelsea. A equipa inglesa venceu o jogo de Amesterdão por duas bolas a uma, mesmo ao cair do pano.
+                        Fernando Torres colocou os «blues» em vantagem aos 60 minutos, na conclusão de um contra-ataque iniciado por Petr Cech. Óscar Cardozo empatou oito minutos depois, na conversão de um penalty a punir mão de Azpilicueta na área.
+                        Ivanovic apontou o tento da vitória em período de descontos, na sequência de um pontapé de canto.
+                    </Texto>
+                </PT>
+                <ENG>
+                    <Titulo>Chelsea wins the Europa League</Titulo>
+                    <Texto>
+                        Chelsea won against Benfica the final for the Europa League, 2-1 in Amsterdam.
+                        Fernando Torres scored a fantastic goal at the 60min, long ball from Petr Cech controled by Torres, who passes through the defense and around the keeper and puts it in making it 1-0 for Chelsea.
+                        Óscar Cardozo equalized 8min later from the penalty spot, infraction commited by a handball from Azpilicueta.
+                        Right at the death (93min), Ivanovic scores the winner with a stunning header from a Juan Mata corner kick.
+                    </Texto>
+                </ENG>
+            </Lingua>
+            <Data>
+                <Dia>15</Dia>
+                <Mes>05</Mes>
+                <Ano>2013</Ano>
+                <Hora>21:38</Hora>
+            </Data>
+            <Autor>Redacao</Autor>
+            <Resumo>Chelsea vence Liga Europa</Resumo>
+            <Foto>http://www.maisfutebol.iol.pt/multimedia/oratvi/multimedia/imagem/id/13868054/229</Foto>
+        </Noticia>
+    </Noticias>
+    <Modalidades>
+        <Modalidade idModalidade="1">
+            <NomeModalidade>Futebol</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>1</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="2">
+            <NomeModalidade>Andebol</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>2</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="3">
+            <NomeModalidade>Hóquei</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>3</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="4">
+            <NomeModalidade>Futsal</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>4</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="5">
+            <NomeModalidade>Vólei</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>5</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+    </Modalidades>
+    <Clubes>
+        <Clube idClube="1">
+            <NomeClube>FC Porto</NomeClube>
+        </Clube>
+        <Clube idClube="2">
+            <NomeClube>SL Benfica</NomeClube>
+        </Clube>
+        <Clube idClube="3">
+            <NomeClube>Paços de Ferreira</NomeClube>
+        </Clube>
+        <Clube idClube="4">
+            <NomeClube>SC Braga</NomeClube>
+        </Clube>
+        <Clube idClube="5">
+            <NomeClube>Estoril Praia</NomeClube>
+        </Clube>
+        <Clube idClube="6">
+            <NomeClube>Rio Ave</NomeClube>
+        </Clube>
+        <Clube idClube="7">
+            <NomeClube>Sporting</NomeClube>
+        </Clube>
+        <Clube idClube="8">
+            <NomeClube>Nacional</NomeClube>
+        </Clube>
+        <Clube idClube="9">
+            <NomeClube>Vitoria Guimaraes</NomeClube>
+        </Clube>
+        <Clube idClube="10">
+            <NomeClube>Maritimo</NomeClube>
+        </Clube>
+    </Clubes> 
+    
+    <Ligas>
+        <Liga idLiga="1">
+            <NomeLiga>Liga Portuguesa</NomeLiga>
+            <Tabela>
+                <Pos>
+                    <Posicao>1</Posicao>
+                    <idClube>1</idClube>
+                    <Pts>78</Pts>
+                    <Vit>24</Vit>
+                    <Emp>6</Emp>
+                    <Der>0</Der>
+                    <GM>70</GM>
+                    <GS>14</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>2</Posicao>
+                    <idClube>2</idClube>
+                    <Pts>77</Pts>
+                    <Vit>24</Vit>
+                    <Emp>5</Emp>
+                    <Der>1</Der>
+                    <GM>77</GM>
+                    <GS>20</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>3</Posicao>
+                    <idClube>3</idClube>
+                    <Pts>54</Pts>
+                    <Vit>14</Vit>
+                    <Emp>12</Emp>
+                    <Der>4</Der>
+                    <GM>42</GM>
+                    <GS>29</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>4</Posicao>
+                    <idClube>4</idClube>
+                    <Pts>52</Pts>
+                    <Vit>16</Vit>
+                    <Emp>4</Emp>
+                    <Der>10</Der>
+                    <GM>60</GM>
+                    <GS>44</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>5</Posicao>
+                    <idClube>5</idClube>
+                    <Pts>45</Pts>
+                    <Vit>13</Vit>
+                    <Emp>6</Emp>
+                    <Der>11</Der>
+                    <GM>47</GM>
+                    <GS>37</GS>
+                </Pos>
+            </Tabela>
+            <MelhorMarcador>
+                <NomeJogador>Jackson Martinez</NomeJogador>
+                <idClube>1</idClube>
+                <Golos>26</Golos>
+            </MelhorMarcador>
+        </Liga>
+    </Ligas>
+</Jornal>

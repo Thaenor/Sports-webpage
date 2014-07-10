@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="JDAndebolT.xsl"?>
+
+<Jornal
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="JornalXsd.xsd"
+>
+   <Noticias>
+        <Noticia id="1" idModalidade="1" idLigaN="1">
+            <idClubes>
+                <idClube>1</idClube>
+                <idClube>2</idClube>
+            </idClubes>
+            <Lingua>
+                <PT>
+                    <Titulo>Chelsea vence Liga Europa</Titulo>
+                    <Texto>
+                        O Chelsea derrotou ontem o Benfica por 2-1 na final da Liga Europa. O Benfica entrou bem na partida e dominou o Chelsea
+                        tendo mais posse de bola mas ambas as equipas não conseguiram marcar na primeira parte, e embora o dominio fosse benfiquista
+                        foi o Chelsea que esteve mais perto de marcar por Frank Lampard. O golo apareceu apenas na segunda parte, onde também apareceu
+                        um Chelsea superior, Petr Cech lançou longo até Torres que aguentou a carga dos centrais do Benfica, contornou Artur
+                        e empurrou para dentro da baliza fazendo o 1-0 na partida e o seu 21º golo da temporada. O Benfica não baixou os braços
+                        e momentos depois, uma mão infantil de Azpilicueta dentro da grande àrea deu a Óscar Cardozo a possibilidade de empatar
+                        através da marcar de grande penalidade, que este não desperdiçou atirando forte para o fundo das redes, empatando a partir.
+                        Cardozo sentiu caimbras logo depois de bater o penalty mas continuou o jogo e esteve perto de marcar ao minuto 80 com um 
+                        remate fortíssimo fora de àrea que Cech desviou para canto. Momentos antes foi Frank Lampard que fez a trave da baliza abanar
+                        com um remate fantástico de 30m de distância, infelicidade para os blues. Maior infelicidade ainda para o Benfica que sofreu
+                        um "flashback" do que aconteceu no Dragão ao minuto 92, quando Ivanovic (no mesmo minuto) faz um cabeceamento imparável 
+                        ,após canto de Juan Mata, derrotando assim os encarnados por 2-1. Segunda derrota consecutiva do Benfica e ambas já para lá dos 90min
+                        fez Jorge Jesus pensar se renova ou não pelas Àguias.
+                        O Chelsea vence assim o seu segundo troféu europeu após ter vencido a Liga dos Campeões na época anterior.
+                    </Texto>
+                </PT>
+                <ENG>
+                    <Titulo>Chelsea wins the Europa League</Titulo>
+                    <Texto>
+                        Chelsea won 2-1 against Benfica yesterday, winning the Europa League in Amesterdam. The match didn't start well for the blues,
+                        Benfica's entry in the match was very strong, getting more possession but neither team broke the deadlock in the first half and although
+                        Benfica was on top, Frank Lampard was the one who almost scored. With a better Chelsea in the 2nd half, the deadlock was finnally
+                        broken in the 60th minute by Fernando Torres, who recieved the ball from Cech, beated both Benfica's central defenders, routunded
+                        Artur and scored, vintage Torres making it 1-0 to Chelsea and scoring his 21st goal of the season. Benfica's response was right around
+                        the corner, when Azpilicueta gave handball in the box, penalty for Benfica which Cardozo didn't miss making it 1-1. Chelsea responded
+                        with Frank Lampard hitting the woodwork with a screamer from 30yrds out, very unlucky. Although, in the 92nd minute Chelesa got a corner kick
+                        which Juan Mata sending it to the far past, where Brandon Ivanovic beats his marker and heads it home winning the game. This felt
+                        like a flashback for Benfica, who had the lost against FC Porto in the Dragão at the same minute, 2-1. Benfica has lost two games
+                        in a row and both games lost in injury time, reason that made Jorge Jesus think about remaining in charge of the "Águias".
+                        Chelsea has won their second European title after winning the Champions League last season.
+                    </Texto>
+                </ENG>
+            </Lingua>
+            <Data>
+                <Dia>15</Dia>
+                <Mes>05</Mes>
+                <Ano>2013</Ano>
+                <Hora>19:45</Hora>
+            </Data>
+            <Autor>Marco Ferreira</Autor>
+            <Resumo>x</Resumo>
+            <Foto>s</Foto>
+        </Noticia>
+        <Noticia id="2" idModalidade="3" idLigaN="1">
+            <idClubes>
+                <idClube>1</idClube>
+                <idClube>2</idClube>
+            </idClubes>
+            <Lingua>
+                <PT>
+                    <Titulo>FC Porto vence Oliveirense por 7-6</Titulo>
+                    <Texto>
+                        Já campeão, o FC Porto continua a ganhar no campeonato nacional.
+                        Esta sexta-feira venceu no terreno da Oliveirense, terceiro classificado, por 7-6, em partida antecipada da 29.ª e penúltima jornada.
+                        Os dragões chegaram ao intervalo a perder por 5-2 mas uma recuperação notável no segundo tempo, liderada por Reinaldo Ventura (fez um poker), permitiu a vitória.
+                    </Texto>
+                </PT>
+                <ENG>
+                    <Titulo>FC Porto 7-6 Oliveirense</Titulo>
+                    <Texto>
+                        FC Porto keeps winning for the National League, although they already won the title.
+                        This friday, Porto went to Oliverense's turf , 3rd in the table, and won 7-6 for the 29th fixture that had to be posponed.
+                        The Dragons were 5-2 down in the first half, manage to do an outstanding comeback in the second half. Reinaldo Ventura was the MVP scored 4 goals, grabing the win.
+                    </Texto>
+                </ENG>
+            </Lingua>
+            <Data>
+                <Dia>24</Dia>
+                <Mes>05</Mes>
+                <Ano>2013</Ano>
+                <Hora>23:57</Hora>
+            </Data>
+            <Autor>Redacao</Autor>
+            <Resumo>Pornto vence por 7-6 Oliverense em jogo para a liga de hóquei portuguesa.</Resumo>
+            <Foto>http://www.abola.pt/img/fotos/hoquei/2011/reinaldoventura1.jpg</Foto>
+        </Noticia>
+    </Noticias>
+    <Modalidades>
+        <Modalidade idModalidade="1">
+            <NomeModalidade>Futebol</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>1</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="2">
+            <NomeModalidade>Andebol</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>2</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="3">
+            <NomeModalidade>Hóquei</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>3</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="4">
+            <NomeModalidade>Futsal</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>4</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+        <Modalidade idModalidade="5">
+            <NomeModalidade>Vólei</NomeModalidade>
+            <Ref_Ligas>
+                <idLiga>5</idLiga>
+            </Ref_Ligas>
+        </Modalidade>
+    </Modalidades>
+    <Clubes>
+        <Clube idClube="1">
+            <NomeClube>FC Porto</NomeClube>
+        </Clube>
+        <Clube idClube="2">
+            <NomeClube>SL Benfica</NomeClube>
+        </Clube>
+        <Clube idClube="3">
+            <NomeClube>Paços de Ferreira</NomeClube>
+        </Clube>
+        <Clube idClube="4">
+            <NomeClube>SC Braga</NomeClube>
+        </Clube>
+        <Clube idClube="5">
+            <NomeClube>Estoril Praia</NomeClube>
+        </Clube>
+        <Clube idClube="6">
+            <NomeClube>Rio Ave</NomeClube>
+        </Clube>
+        <Clube idClube="7">
+            <NomeClube>Sporting</NomeClube>
+        </Clube>
+        <Clube idClube="8">
+            <NomeClube>Nacional</NomeClube>
+        </Clube>
+        <Clube idClube="9">
+            <NomeClube>Vitoria Guimaraes</NomeClube>
+        </Clube>
+        <Clube idClube="10">
+            <NomeClube>Maritimo</NomeClube>
+        </Clube>
+    </Clubes> 
+    
+    <Ligas>
+        <Liga idLiga="1">
+            <NomeLiga>Liga Portuguesa</NomeLiga>
+            <Tabela>
+                <Pos>
+                    <Posicao>1</Posicao>
+                    <idClube>1</idClube>
+                    <Pts>78</Pts>
+                    <Vit>24</Vit>
+                    <Emp>6</Emp>
+                    <Der>0</Der>
+                    <GM>70</GM>
+                    <GS>14</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>2</Posicao>
+                    <idClube>2</idClube>
+                    <Pts>77</Pts>
+                    <Vit>24</Vit>
+                    <Emp>5</Emp>
+                    <Der>1</Der>
+                    <GM>77</GM>
+                    <GS>20</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>3</Posicao>
+                    <idClube>3</idClube>
+                    <Pts>54</Pts>
+                    <Vit>14</Vit>
+                    <Emp>12</Emp>
+                    <Der>4</Der>
+                    <GM>42</GM>
+                    <GS>29</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>4</Posicao>
+                    <idClube>4</idClube>
+                    <Pts>52</Pts>
+                    <Vit>16</Vit>
+                    <Emp>4</Emp>
+                    <Der>10</Der>
+                    <GM>60</GM>
+                    <GS>44</GS>
+                </Pos>
+                <Pos>
+                    <Posicao>5</Posicao>
+                    <idClube>5</idClube>
+                    <Pts>45</Pts>
+                    <Vit>13</Vit>
+                    <Emp>6</Emp>
+                    <Der>11</Der>
+                    <GM>47</GM>
+                    <GS>37</GS>
+                </Pos>
+            </Tabela>
+            <MelhorMarcador>
+                <NomeJogador>Jackson Martinez</NomeJogador>
+                <idClube>1</idClube>
+                <Golos>26</Golos>
+            </MelhorMarcador>
+        </Liga>
+    </Ligas>
+</Jornal>

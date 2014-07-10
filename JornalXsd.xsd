@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Jornal" type="TJornal"> 
+        
+        <xs:key name="noticia_key">
+            <xs:selector xpath="./Noticia"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:keyref name="relacionadas" refer="noticia_key">
+            <xs:selector xpath="./Noticia"/>
+            <xs:field xpath="@Relacionadas"/>
+        </xs:keyref>
+        
+        <xs:key name="modalidade_key"> 
+            <xs:selector xpath="./Modalidades/Modalidade"/> 
+            <xs:field xpath="@idModalidade"/> 
+        </xs:key> 
+        <xs:keyref name="modalidades_keyref" refer="modalidade_key"> 
+            <xs:selector xpath="./Noticias/Noticia"/> 
+            <xs:field xpath="@idModalidade"/> 
+        </xs:keyref>
+        
+        <xs:key name="clube_key"> 
+            <xs:selector xpath="./Clubes/Clube"/> 
+            <xs:field xpath="@idClube"/> 
+        </xs:key> 
+        <xs:keyref name="clubeNoticia_keyref" refer="clube_key"> 
+            <xs:selector xpath="./Noticias/Noticia/idClubes"/> 
+            <xs:field xpath="@idClube"/> 
+        </xs:keyref>
+        
+        <xs:key name="liga_key"> 
+            <xs:selector xpath="./Ligas/Liga"/> 
+            <xs:field xpath="@idLiga"/> 
+        </xs:key> 
+        <xs:keyref name="ligaModalidade_keyref" refer="liga_key"> 
+            <xs:selector xpath="./Modalidades/Modalidade/Ref_Ligas"/> 
+            <xs:field xpath="@idLiga"/> 
+        </xs:keyref>
+    </xs:element>    
+    
+    <xs:complexType name="TJornal"> 
+        <xs:sequence> 
+            <xs:element name="Noticias">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Noticia" type="TNoticia" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Modalidades">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Modalidade" type="TModalidade" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Clubes">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Clube" type="TClube" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Ligas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Liga" type="TLiga" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence> 
+    </xs:complexType> 
+    
+    <xs:complexType name="TModalidade">
+        <xs:sequence>
+            <xs:element name="NomeModalidade" type="xs:string"/>
+            <xs:element name="Ref_Ligas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idLiga" type="xs:integer" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="idModalidade" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TNoticia">
+        <xs:sequence>
+            <xs:element name="idClubes">
+                <xs:complexType>
+                    <xs:attribute name="idClube" type="xs:integer" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Lingua" type="TLingua" maxOccurs="unbounded"/>
+            <xs:element name="Data" type="TData" maxOccurs="unbounded"/>
+            <xs:element name="Autor" type="xs:string"/>
+            <xs:element name="Resumo" type="xs:string"/>
+            <xs:element name="Foto" type="xs:anyURI"/>
+            <xs:element name="Relacionadas" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+        <xs:attribute name="idModalidade" type="xs:integer" use="required"/>
+        <xs:attribute name="idLigaN" type="xs:integer" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="TLingua"> 
+        <xs:all> 
+            <xs:element name="PT" type="TLinguaEsc" nillable="true" minOccurs="0"/>
+            <xs:element name="ENG" type="TLinguaEsc" nillable="true" minOccurs="0"/> 
+        </xs:all> 
+    </xs:complexType> 
+    
+    <xs:complexType name="TLinguaEsc"> 
+        <xs:sequence> 
+            <xs:element name="Titulo" type="xs:string"/>
+            <xs:element name="Texto" type="xs:string"/> 
+        </xs:sequence> 
+    </xs:complexType> 
+    
+    <xs:complexType name="TData"> 
+        <xs:sequence> 
+            <xs:element name="Dia">
+                <xs:simpleType>
+                    <xs:restriction base="xs:int">
+                        <xs:minInclusive value="0"/>
+                        <xs:maxInclusive value="31"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Mes">
+                <xs:simpleType>
+                    <xs:restriction base="xs:int">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="12"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element> 
+            <xs:element name="Ano">
+                <xs:simpleType>
+                    <xs:restriction base="xs:int">
+                        <xs:minInclusive value="1900"/>
+                        <xs:maxInclusive value="2111"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Hora" type="THora"/> 
+        </xs:sequence> 
+    </xs:complexType>  
+    
+    <xs:simpleType name="THora">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-2][0-9]|[0-9]):([0-5][0-9]|0[0-9])"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="TLiga">
+        <xs:sequence>
+            <xs:element name="NomeLiga" type="xs:string"/>
+            <xs:element name="Tabela" type="TTabela" maxOccurs="unbounded"/>
+            <xs:element name="MelhorMarcador" type="TMarcador" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="idLiga" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="TTabela">
+        <xs:sequence>
+            <xs:element name="Pos" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Posicao" type="xs:integer"/>
+                        <xs:element name="idClube" type="xs:integer"/>
+                        <xs:element name="Pts" type="xs:integer"/>
+                        <xs:element name="Vit" type="xs:integer"/>
+                        <xs:element name="Emp" type="xs:integer"/>
+                        <xs:element name="Der" type="xs:integer"/>
+                        <xs:element name="GM" type="xs:integer"/>
+                        <xs:element name="GS" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="TMarcador">
+        <xs:sequence>
+            <xs:element name="NomeJogador" type="xs:string"/>
+            <xs:element name="idClube" type="xs:integer"/>
+            <xs:element name="Golos" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="TClube">
+        <xs:sequence>
+            <xs:element name="NomeClube" type="xs:string"/>     
+        </xs:sequence>
+        <xs:attribute name="idClube" type="xs:integer" use="required"/>
+    </xs:complexType>
+    
+                 
+</xs:schema>

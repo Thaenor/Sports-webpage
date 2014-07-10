@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" 
+xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+xmlns:ns1='http://www.dei.isep.ipp.pt/lprog'
+xsi:schemaLocation='http://www.dei.isep.ipp.pt/lprog Relatorio.xsd'>
+
+    <ns1:páginaRosto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Relatorio.xsl">
+        <ns1:tema>Site Desportivo</ns1:tema>
+        <ns1:disciplina id="1">
+            <ns1:designação>Linguagens de Programação</ns1:designação>
+            <ns1:anoCurricular>2012/2013</ns1:anoCurricular>
+            <ns1:sigla>LPROG</ns1:sigla>
+        </ns1:disciplina>
+        <ns1:autor id="1">
+            <ns1:nome>Francisco Santos</ns1:nome>
+            <ns1:número>1111315</ns1:número>
+            <ns1:mail>1111315@isep.ipp.pt</ns1:mail>
+        </ns1:autor>
+        <ns1:autor id="2">
+            <ns1:nome>Marco Ferreira</ns1:nome>
+            <ns1:número>1090622</ns1:número>
+            <ns1:mail>1090622@isep.ipp.pt</ns1:mail>
+        </ns1:autor>
+        <ns1:data>2013/05/26</ns1:data>
+        <ns1:turmaPL>2DC</ns1:turmaPL>
+        <ns1:profPL>LMN</ns1:profPL>
+        <ns1:logotipoDEI>http://www.isep.ipp.pt/assets/images/departamentos/dei.png</ns1:logotipoDEI>
+    </ns1:páginaRosto>
+    <ns1:corpo id="1">
+        <ns1:introdução tituloSecção="Introducao" id="1">
+            <ns1:bloco>
+                <ns1:paragráfo>
+                    <ns1:citação>
+                        O projecto de XML foi desenvolvido no contexto da 
+                        disciplina de LPROG. Para o seu desenvolvimento foi 
+                        usado os conhecimentos das linguagens de xml e xslt. O 
+                        tema atribuido envolvia a criação de um sistema de 
+                        gestão e exposição de noticias desportivas.
+                    </ns1:citação>
+                </ns1:paragráfo>
+            </ns1:bloco>
+        </ns1:introdução>
+        <ns1:secções>
+            <ns1:análise tituloSecção="Desenvolvimento" id="2">
+                <ns1:bloco>
+                    <ns1:paragráfo>
+                        No contexto do projecto foram criadas noticias relativas
+                        a diferentes modalidades desportivas como: Futebol, 
+                        Andebol, Hoquei, Futsal, Volei e ainda é possível 
+                        adicionar novas modalidades.
+                        Dentro de cada modalidade desportiva as noticias 
+                        encontram-se dividas por campeonatos. Cada noticia 
+                        encontra-se disponível em várias linguas, podendo o xml 
+                        conter várias traduções à mesma noticia.
+                    </ns1:paragráfo>
+                </ns1:bloco>
+            </ns1:análise>
+            <ns1:linguagem tituloSecção="Desenvolvimento" id="3">
+                <ns1:bloco>
+                    <ns1:paragráfo>
+                        Foram criadas algumas transformações através do uso dos
+                        xls que permitem ver as noticias relacionadas ou a mesma
+                        noticia traduzida em diferentes linguas (conforme 
+                        disponivel no xml) ou mesmo ler noticias por clube ou 
+                        mostrar os melhores jogadores de um determinado desporto 
+                    </ns1:paragráfo>
+                </ns1:bloco>
+            </ns1:linguagem>
+            <ns1:transformações tituloSecção="Desenvolvimento" id="4">
+                <ns1:bloco>
+                    <ns1:paragráfo>
+                        Para uma apresentação do xml das noticias foi criado
+                        um simples documento de html, apresentando um "layout"
+                        tipico de sites semelhantes ao tema. 
+                    </ns1:paragráfo>
+                </ns1:bloco>
+            </ns1:transformações>
+        </ns1:secções>
+        <ns1:conclusão tituloSecção="Conclusão" id="1">
+            <ns1:bloco>
+                <ns1:paragráfo>
+                    Este projecto proprocionou uma interessante opurtunidade de
+                    explorar as capacidades e as funcionalidades do xml e xsl.
+                    Podemos ter uma ideia dos desafios que encontraremos no
+                    desenvolvimento de um site assim como as melhores formas
+                    de optimizar a forma como a sua informação é disponibilizada.
+                    Encontrámos certas dificuldades, devido ao facto de 
+                    diferentes web browsers mostrarem a informação de forma
+                    variada, no caso do nosso projecto o browser "Firefox"
+                    demonstrou uma melhor visualização dos ficheiros criados,
+                    no entanto obteve-se alguns problemas com o "Google Chrome"
+                </ns1:paragráfo>
+            </ns1:bloco>
+        </ns1:conclusão>
+        <ns1:referências>
+            <ns1:refBibliográfica idRef="1">
+                <ns1:título>XML Tutorial</ns1:título>
+                <ns1:dataPublicação></ns1:dataPublicação>
+                <ns1:autor>http://www.w3schools.com/xml/default.asp</ns1:autor>
+            </ns1:refBibliográfica>
+            <ns1:refBibliográfica idRef="2">
+                <ns1:título>XSLT Tutorial</ns1:título>
+                <ns1:dataPublicação></ns1:dataPublicação>
+                <ns1:autor>http://www.w3schools.com/xsl/default.asp</ns1:autor>
+            </ns1:refBibliográfica>
+            <ns1:refBibliográfica idRef="3">
+                <ns1:título>XPath Tutorial</ns1:título>
+                <ns1:dataPublicação></ns1:dataPublicação>
+                <ns1:autor>http://www.w3schools.com/xpath/default.asp</ns1:autor>
+            </ns1:refBibliográfica>
+            <ns1:refBibliográfica idRef="4">
+                <ns1:título>XML Schema Tutorial</ns1:título>
+                <ns1:dataPublicação></ns1:dataPublicação>
+                <ns1:autor>http://www.w3schools.com/schema/default.asp</ns1:autor>
+            </ns1:refBibliográfica>
+        </ns1:referências>
+    </ns1:corpo>
+    <ns1:anexos tituloSecção="" id="1">
+        <ns1:bloco>
+            <ns1:paragráfo>
+            </ns1:paragráfo>
+        </ns1:bloco>
+    </ns1:anexos>
+
+</xsl:stylesheet>
